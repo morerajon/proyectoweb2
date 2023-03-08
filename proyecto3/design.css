@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(galaxy.jpg);
+    min-height: 100vh;
+    display: flex;
+    justify-content: left;
+    
+}
+
+.identificacion{
+    
+    width: 100%;
+    display: flex;
+    align-items: center;
+    
+    font-size: xx-large;
+}
+
+#Fotoperfil{
+    padding-left: 10px;
+    padding-top: 10px;
+    width:9%;
+    display: flex;
+    min-width: 100px;
+    min-height: 100px;
+   
+}
+#NOMBRE{
+
+    color: white;
+    width: 91%;
+    min-width: 20%;
+    padding-left: 15px;
+
+}
+
+#perfil{
+
+    border-radius: 100px;
+    height: 100px;
+    width: 100px;
+
+}
+
+#form{
+    display: none;
+}
+.botonR{
+
+    font-size: 40px;
+    width: 200px;
+    height: 200px;
+    line-height: 30px;
+    border-radius: 100%;
+    font-family: Times, serif;
+    color: transparent;
+    top: 0;
+}
+
+#boton{
+    background-color:rgb(170, 42, 170);
+    border: 0;
+    border-radius: 5px;
+    color: white;
+    font-size: 14px;
+    padding: 10px 25px;
+
+}
+/*seccion planeta1 "sobre mi"*/
+
+#planeta1{
+    background-image: url(sobremi.jpg);
+    width: 200px;
+    height: 200px;
+    margin-left: 30px;
+    margin-right: 100px;
+    align-items: center;
+    padding: 50px;
+    position: relative;
+    margin-top: 110px;
+    
+}
+
+#planeta1:hover{
+
+box-shadow: 0 0 10px #F36A0C, 0 0 200px #F29A15,0 0 400px #F0A818;
+color: whitesmoke;
+
+}
+
+.modalC{
+    background-color:rgba(15, 12, 4, 0.658);
+    width: 600PX;
+    max-width:600px ;
+    padding:10px 30px ;
+    border-radius: 20px;
+    text-align: center;
+    position: absolute;
+    left: 320px;
+    top: 180px;
+    font-size: 24px;
+    color: white;
+    display: none;
+}
+
+
+#planeta2{
+    background-image: url(estudios.jpg);
+    width: 140px;
+    height: 140px;
+    margin-right: 130px;
+    top: 100%;
+    left:30px ;
+    animation-name: rotacion;
+    animation-duration: 10s ;
+    position: relative;
+    animation-timing-function: linear;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+    
+   
+}
+
+
+#planeta2:hover{
+
+    animation-play-state: paused;
+    background:#B3B3B3 ;
+    box-shadow: 0 0 50px #B3B3B3, 0 0 200px #8E8E8E,0 0 400px #6C6C6C;
+    color: #373737;
+}
+
+@keyframes rotacion {
+
+    0%   {top: 100%;}
+   
+   
+    100% {top:-100%;}
+   
+   }
+
+#planeta3{
+    background-image: url(conocimiento.jpg);
+    width: 160px;
+    height: 160px;
+    margin-right: 80px;
+    top: 100%;
+    animation-name: rotacion;
+    animation-duration: 10s ;
+    position: relative;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+}
+
+#planeta3:hover{
+    animation-play-state: paused;
+    background:#693E1B ;
+    box-shadow: 0 0 50px #AA9270, 0 0 200px #693E1B,0 0 400px #2F405A;
+    color: whitesmoke;
+    font-size: 30px;
+}
+
+
+#planeta4{
+    
+    background-image: url(experiencia.jpg);
+    width: 130px;
+    height: 130px;
+    margin-right: 100px;
+    top: 100%;
+    animation-name: rotacion;
+    animation-duration: 10s ;
+    position: relative;
+    animation-timing-function: linear;
+    animation-delay: 5s;
+    animation-iteration-count: infinite;
+}
+
+#planeta4:hover{
+    animation-play-state: paused;
+    background:#20497D ;
+    box-shadow: 0 0 50px #4D83B1, 0 0 200px #040814,0 0 400px #20497D;
+    color: whitesmoke;
+    font-size: 28px;
+}
+#planeta5{
+    background-image: url(contact.jpg);
+    width: 150px;
+    height: 150px;
+    margin-right: 100px;
+    top: 100%;
+    animation-name: rotacion;
+    animation-duration: 10s ;
+    position: relative;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+}
+
+#planeta5:hover{
+    animation-play-state: paused;
+    background:#D1834F ;
+    box-shadow: 0 0 50px #AA9270, 0 0 200px #693E1B,0 0 400px #2F405A;
+    color: whitesmoke;
+    font-size: 30px;
+}
+
